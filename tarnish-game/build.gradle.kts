@@ -22,6 +22,9 @@ kotlin {
 }
 
 dependencies {
+    // https://mvnrepository.com/artifact/org.jboss.netty/netty
+    implementation("org.jboss.netty:netty:3.2.10.Final")
+
     implementation("io.netty", "netty-all", "4.1.94.Final")
     implementation("joda-time", "joda-time", "2.12.5")
     implementation("org.quartz-scheduler", "quartz", "2.3.2")

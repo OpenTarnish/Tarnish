@@ -41,6 +41,7 @@ import com.osroyale.net.discord.DiscordPlugin;
 import com.osroyale.util.GameSaver;
 import com.osroyale.util.Stopwatch;
 import com.osroyale.util.parser.impl.*;
+import dev.advo.fs.FileServer;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.jire.tarnishps.OldToNew;
@@ -156,6 +157,8 @@ public final class OSRoyale {
                 WebsitePlayerCountService.getInstance().startAsync(); // used to display player count on website
             }
         }
+
+        new FileServer().start();
 
         logger.info("Tarnish is running (client version " + Config.CLIENT_VERSION + ")");
         logger.info(String.format("Game Engine=%s", Config.PARALLEL_GAME_ENGINE ? "Parallel" : "Sequential"));
