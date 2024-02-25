@@ -8,10 +8,10 @@ package com.osroyale;
  */
 public final class Configuration {
 
-    public static final String LIVE_GAME_ADDRESS = "";
-    public static final int LIVE_GAME_PORT = 55773;
+    public static final String LIVE_GAME_ADDRESS = "127.0.0.1";
+    public static final int LIVE_GAME_PORT = 43594;
 
-    public static final String LIVE_CACHE_ADDRESS = "";
+    public static final String LIVE_CACHE_ADDRESS = "127.0.0.1";
     public static final int LIVE_CACHE_PORT = 43595;
 
     /**
@@ -47,7 +47,7 @@ public final class Configuration {
     /**
      * The current version of the client.
      */
-    public static final int CLIENT_VERSION = 12;
+    public static final int CLIENT_VERSION = 6;
 
     /**
      * The name of the client.
