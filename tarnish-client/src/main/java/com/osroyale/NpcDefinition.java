@@ -592,7 +592,7 @@ public final class NpcDefinition {
                         Animation.animations[primaryId],
                         Animation.animations[secondaryId],
                         currCycle, nextCycle);
-            } else if (nextId != -1) {
+            } else if (true || nextId != -1) {
                 animatedModel.applyAnimationFrame(true, primaryId, nextId, currCycle, nextCycle);
             } else {
                 animatedModel.mix(mask, secondaryId, primaryId);
