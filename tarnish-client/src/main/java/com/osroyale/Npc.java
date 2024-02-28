@@ -55,7 +55,7 @@ public final class Npc extends Entity implements RSNPC {
                         primarySeq.interleaveOrder, false);*/
             }
             Animation secondarySeq = null;
-            if (super.secondarySeqID >= 0) {
+            if (primaryId == -1 && super.secondarySeqID >= 0) {
                 secondarySeq = Animation.animations[super.secondarySeqID];
                 if (secondarySeq.isSkeletalAnimation()) {
                     //System.err.println("secondarySeq=" + secondarySeq.getSkeletalFrameId() + ", which is for " + secondarySeqID + " cycle " + primarySeqFrame + " / " + secondarySeqFrame);
